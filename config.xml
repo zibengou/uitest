@@ -1,0 +1,28 @@
+<root>
+	<component name='loginBaidu'>
+		<action type="1" command="https://passport.baidu.com/v2/?login"/>
+		<action type="4" command="TANGRAM__PSP_3__userName" data="*****"/>
+		<action type="4" command="TANGRAM__PSP_3__password" data="*****"/>
+		<action type="3" command="TANGRAM__PSP_3__submit"/>
+		<action type="1" command="http://tieba.baidu.com/f?kw=%C4%CF%BE%A9%C0%ED%B9%A4%B4%F3%D1%A7&amp;fr=home"/>
+	</component>
+	<component name='haiyang' reTry="500">
+		<action type="2" command="$('span.close-btn').click()"/>
+		<action type="2" command="$(document).scrollTop(100000)"/>
+		<action type="2" command="$('input[name=&quot;title&quot;]').val(&quot;九月份金融系新生前来报道&quot;)"/>
+		<action type="2" command="$('#ueditor_replace').text('求学长学姐YP')"/>
+		<action type="2" command="$('.ui_btn.ui_btn_m.j_submit.poster_submit').click()"/>
+	</component>
+<!-- 	<component name='testZhihu'>
+		<action type="1" command="http://www.zhihu.com"/>
+		<action type="0" command="$('a')[1].click()"/>
+		<action type="2" command="$('[name=&quot;account&quot;]').val('zibengou@outlook.com')"/>
+		<action type="2" command="$('[name=&quot;password&quot;]').val('stone85233171')"/>
+		<action type="0" command="$('[type=&quot;submit&quot;]').click()"/>
+		<action type="0" command="$('.question_link')[0].click()"/>
+		<action type="1" command="https://www.zhihu.com/question/21905682"/>
+		<action type="0" command="$('[name=&quot;anno-checkbox&quot;]').click()"/>
+		<action type="0" command="$('.zm-editable-editor-field-element.editable').text('this is a zibengou Test')"/>
+		<action type="0" command="$('[name=&quot;save&quot;]').click()"/>
+	</component> -->
+</root>
